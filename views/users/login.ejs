@@ -1,34 +1,36 @@
 <% layout('/layouts/boilerplate') %>
-<div class="row mt-3">
-  <div class="col-6 offset-3">
-    <h1 class="col-6 offset-3">Login</h1>
-    <form method="post" action="/login" >
-      <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input
-          placeholder="enter username"
-          id="username"
-          type="text"
-          name="username"
-          class="form-control"
-          required
-        />
-        <div class="invalid-feedback">enter a valid username</div>
-      </div>
+<div class="container  ">
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-6 mx-auto mt-3 mb-5">
+      <h2 class="text-center mb-5 mt-2 login-title" >Login page</h2>
+      <form method="post" action="/login" class="bg-light p-4 rounded shadow">
+        <div class="mb-3 mt-1">
+          <label for="username" class="form-label">Username</label>
+          <input
+            placeholder="enter username"
+            id="username"
+            type="text"
+            name="username"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Enter a valid username</div>
+        </div>
    
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input
-          placeholder="enter password"
-          id="password"
-          type="password"
-          name="password"
-          class="form-control"
-          required
-        />
-        <div class="invalid-feedback">enter a valid password</div>
-      </div>
-      <button class="btn btn-success">Login</button>
-    </form>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            placeholder="enter password"
+            id="password"
+            type="password"
+            name="password"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Enter a valid password</div>
+        </div>
+        <button class="btn btn-success w-100">Login</button>
+      </form>
+    </div>
   </div>
 </div>
